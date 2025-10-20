@@ -1,0 +1,88 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="OnlineStore.ManagerAddEdit"
+        Title="ManagerAddEdit"
+		Background="#252746">
+
+	<Window.Styles>
+		<StyleInclude Source="/Styles/ManagerAddEditStyle.axaml"></StyleInclude>
+	</Window.Styles>
+	
+	<Viewbox Margin="70">
+		<Grid>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition/>
+				<ColumnDefinition/>
+			</Grid.ColumnDefinitions>
+			<StackPanel Grid.Column="0"
+						Margin="0 0 5 0">
+				<TextBlock Text="Surname"
+						   Classes="TBBack"/>
+				<TextBox Classes="Email"
+						 Margin="0 0 0 10"
+						 Watermark="Enter surname"
+						 x:Name="TBSurname"
+						 Text="{Binding Surname}"/>
+				<TextBlock Text="Name"
+						   Classes="TBBack"/>
+				<TextBox Classes="Email"
+						 Margin="0 0 0 10"
+						 Watermark="Enter name"
+						 x:Name="TBName"
+						 Text="{Binding Name}"/>
+				<TextBlock Text="Patronymic"
+						   Classes="TBBack"/>
+				<TextBox Classes="Email"
+						 Margin="0 0 0 10"
+						 Watermark="Enter patronymic"
+						 x:Name="TBPatronymic"
+						 Text="{Binding Patronymic}"/>
+				<Button x:Name="BTAdd"
+				Classes="BTBack"
+				HorizontalAlignment="Left"
+				
+				Width="70"
+				Height="30"
+				Click="Button_Click_1">
+					<TextBlock Classes="TBBack"
+							   Text="Click"
+							   HorizontalAlignment="Center"
+							   VerticalAlignment="Center"/>
+				</Button>
+			</StackPanel>
+			<StackPanel Grid.Column="1">
+				<TextBlock Text="Email"
+						   Classes="TBBack"/>
+				<TextBox Classes="Email"
+						 Margin="0 0 0 10"
+						 Watermark="Enter email"
+						 x:Name="TBEmail"
+						 Text="{Binding Email}"/>
+				<TextBlock Text="Password"
+						   Classes="TBBack"/>
+				<TextBox Classes="Email"
+						 Margin="0 0 0 10"
+						 Watermark="Enter password"
+						 x:Name="TBPassword"
+						 Text="{Binding Password}"/>
+				<TextBlock Text="Phone"
+						   Classes="TBBack"/>
+				<TextBox Classes="Email"
+						 Margin="0 0 0 10"
+						 Watermark="Enter phone"
+						 x:Name="TBPhone"
+						 Text="{Binding Phone}"/>
+				<TextBlock Text="Balance"
+						   Classes="TBBack"/>
+				<TextBox Classes="Email"
+						 Margin="0 0 0 10"
+						 Watermark="Enter balance"
+						 x:Name="TBBalance"
+						 Text="{Binding Balance}"/>
+			</StackPanel>
+		</Grid>
+	</Viewbox>
+</Window>

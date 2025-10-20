@@ -1,0 +1,247 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="OnlineStore.Manager"
+			 xmlns:converters="clr-namespace:OnlineStore.Pages.Converters"
+			 Background="#252746">
+
+	<UserControl.Styles>
+		<StyleInclude Source="/Styles/ManagerWindowStyle.axaml"></StyleInclude>
+	</UserControl.Styles>
+
+	<UserControl.Resources>
+		<converters:ByteArrayToImageConverter x:Key="ImageConverter"/>
+	</UserControl.Resources>
+
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="*"/>
+			<RowDefinition Height="Auto"/>
+		</Grid.RowDefinitions>
+		<Expander x:Name="ProfileExpander"
+			   Background="#252746"
+			  BorderBrush="Black"
+			  BorderThickness="1"
+						  HorizontalAlignment="Right"
+						  VerticalAlignment="Top"
+				  Grid.RowSpan="2"
+				  Width="140"
+			  CornerRadius="8"
+			  Margin="10">
+
+			<Expander.Header>
+				<StackPanel Orientation="Horizontal" Spacing="8">
+					<StackPanel VerticalAlignment="Center">
+						<TextBlock Text="{Binding FullName}" FontWeight="Bold"/>
+						<TextBlock Text="Manager" FontSize="12" Opacity="0.7"/>
+					</StackPanel>
+				</StackPanel>
+			</Expander.Header>
+
+			<Expander.Content>
+				<StackPanel Spacing="5">
+					<Button Click="Button_Click_3"
+							Width="110"
+							HorizontalAlignment="Center">
+						<TextBlock Text="My profile"
+								   HorizontalAlignment="Center"
+								   VerticalAlignment="Center"/>
+					</Button>
+					<Button Click="Button_Click_4"
+							Width="110"
+							HorizontalAlignment="Center">
+						<TextBlock Text="Logout"
+								   HorizontalAlignment="Center"
+								   VerticalAlignment="Center"/>
+					</Button>
+				</StackPanel>
+			</Expander.Content>
+		</Expander>
+
+		<StackPanel Orientation="Horizontal"
+					Margin="10">
+			<TextBox Width="200"
+				 Margin="0 0 10 0"
+				 HorizontalAlignment="Left"
+				 VerticalAlignment="Top"
+					 x:Name="TBSearch"
+					 Classes="Email"
+					 TextChanged="TextBox_TextChanged"
+					 Watermark="Name"/>
+			<TextBox Width="140"
+				 Margin="0 0 10 0"
+				 HorizontalAlignment="Left"
+				 VerticalAlignment="Top"
+					 x:Name="TBSearchPrice"
+					 Classes="Email"
+					 TextChanged="TextBox_TextChanged"
+					 Watermark="Price"/>
+			<ComboBox x:Name="CBFilter"
+					  Width="140"
+					  Classes="CBoxic"
+					 HorizontalAlignment="Left"
+					 VerticalAlignment="Top"
+					  SelectionChanged="ComboBox_SelectionChanged"/>
+
+		</StackPanel>
+
+
+
+		<Viewbox Grid.Row="1"
+				 VerticalAlignment="Top"
+				 Margin="0 20 0 0">
+			<Grid>
+				<Grid.RowDefinitions>
+					<RowDefinition Height="Auto"/>
+					<RowDefinition Height="*"/>
+				</Grid.RowDefinitions>
+
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition/>
+					<ColumnDefinition/>
+				</Grid.ColumnDefinitions>
+
+				<TabControl  Width="1300"
+								  Height="700"
+							 Margin="10">
+
+					<TabItem Header="Products"
+							 x:Name="TIProduct"
+							 Tapped="TabItem_Tapped_5">
+						<DataGrid x:Name="DGProduct"
+								  IsReadOnly="True"
+								  DoubleTapped="DataGrid_DoubleTapped_2"
+								  AutoGenerateColumns="False">
+							<DataGrid.Columns>
+
+								<DataGridTemplateColumn Header="Image" Width="70">
+									<DataGridTemplateColumn.CellTemplate>
+										<DataTemplate>
+											<Border BorderBrush="#252746"
+													BorderThickness="1"
+													Background="#252746"
+													Width="60"
+													Height="60"
+													CornerRadius="3">
+												<Grid>
+													<Image Source="{Binding Product.Image, Converter={StaticResource ImageConverter}}"
+														   Stretch="Uniform"
+														   MaxWidth="55"
+														   MaxHeight="55"
+														   IsVisible="{Binding Product.HasImage}"/>
+													<TextBlock Text="📷"
+															   FontSize="20"
+															   VerticalAlignment="Center"
+															   HorizontalAlignment="Center"
+															   IsVisible="{Binding Product.HasImage, Converter={x:Static BoolConverters.Not}}"/>
+												</Grid>
+											</Border>
+										</DataTemplate>
+									</DataGridTemplateColumn.CellTemplate>
+								</DataGridTemplateColumn>
+
+								<DataGridTextColumn Header="Name"
+													Binding="{Binding Product.Name}"/>
+								<DataGridTextColumn Header="Description"
+													Binding="{Binding Product.Description}"/>
+								<DataGridTextColumn Header="Price"
+													Binding="{Binding Product.Price}"/>
+								<DataGridTextColumn Header="Category"
+													Binding="{Binding Product.Category.Name}"/>
+								<DataGridTextColumn Header="Count"
+													Binding="{Binding Count}"/>
+							</DataGrid.Columns>
+						</DataGrid>
+					</TabItem>
+					
+					<TabItem Header="Clients"
+							 x:Name="TIClients"
+							 Tapped="TabItem_Tapped_3">
+						<DataGrid x:Name="DGClient"
+								  IsReadOnly="True"
+								  DoubleTapped="DataGrid_DoubleTapped_1"
+								  AutoGenerateColumns="False">
+							<DataGrid.Columns>
+								<DataGridTextColumn Header="Surname"
+													Binding="{Binding Surname}"/>
+								<DataGridTextColumn Header="Name"
+													Binding="{Binding Name}"/>
+								<DataGridTextColumn Header="Patronymic"
+													Binding="{Binding Patronymic}"/>
+								<DataGridTextColumn Header="Balance"
+													Binding="{Binding Balance}"/>
+								<DataGridTextColumn Header="Email"
+													Binding="{Binding Email}"/>
+								<DataGridTextColumn Header="Password"
+													Binding="{Binding Password}"/>
+								<DataGridTextColumn Header="Phone"
+													Binding="{Binding Phone}"/>
+								<DataGridTextColumn Header="StreetId"
+													Binding="{Binding StreetId}"/>
+								<DataGridTextColumn Header="House"
+													Binding="{Binding House}"/>
+								<DataGridTextColumn Header="Apartment"
+													Binding="{Binding Apartment}"/>
+							</DataGrid.Columns>
+						</DataGrid>
+					</TabItem>
+
+
+					<TabItem Header="PaysClients"
+							 x:Name="TIPaysClients"
+							 Tapped="TabItem_Tapped_6">
+						<DataGrid x:Name="DGPaysClients"
+								  IsReadOnly="True"
+								  DoubleTapped="DataGrid_DoubleTapped_7"
+								  AutoGenerateColumns="False">
+							<DataGrid.Columns>
+								<DataGridTextColumn Header="User"
+													Binding="{Binding Basket.User.FullName}"/>
+								<DataGridTextColumn Header="Date"
+													Binding="{Binding Date}"/>
+								<DataGridTextColumn Header="Status"
+													Binding="{Binding Status.Name}"/>
+							</DataGrid.Columns>
+						</DataGrid>
+					</TabItem>
+				</TabControl>
+			</Grid>
+		</Viewbox>
+		<StackPanel Orientation="Horizontal"
+							Grid.Row="2"
+					Margin="20">
+			<Button x:Name="BTAdd"
+				Classes="BTBack"
+				HorizontalAlignment="Right"
+				VerticalAlignment="Top"
+				Margin="10"
+				
+				Width="70"
+				Height="30"
+				Click="Button_Click_1">
+				<TextBlock Classes="TBBack"
+						   Text="Add"
+						   HorizontalAlignment="Center"
+						   VerticalAlignment="Center"/>
+			</Button>
+			<Button x:Name="BTRemove"
+				Classes="BTBack"
+				HorizontalAlignment="Right"
+				VerticalAlignment="Top"
+				Margin="10"
+				
+				Width="70"
+				Height="30"
+				Click="Button_Click_2">
+				<TextBlock Classes="TBBack"
+						   Text="Remove"
+						   HorizontalAlignment="Center"
+						   VerticalAlignment="Center"/>
+			</Button>
+		</StackPanel>
+	</Grid>
+	
+</UserControl>

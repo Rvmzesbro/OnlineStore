@@ -1,0 +1,169 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="OnlineStore.AdminProfile"
+			 Background="#252746">
+
+	<UserControl.Styles>
+		<StyleInclude Source="/Styles/AdminWindowStyle.axaml"></StyleInclude>
+	</UserControl.Styles>
+	<Viewbox>
+		<ScrollViewer VerticalScrollBarVisibility="Auto">
+			<StackPanel Margin="20" Spacing="20">
+
+				<TextBlock Text="Profile"
+						  FontSize="24"
+						  FontWeight="Bold"
+						  HorizontalAlignment="Center"
+						  Margin="0,0,0,10"/>
+
+				<Border BorderBrush="#E0E0E0"
+					   BorderThickness="1"
+					   CornerRadius="8"
+					   Padding="20"
+						Width="300"
+						Opacity="0.5"
+					   Background="#252746">
+
+					<StackPanel Spacing="15">
+
+						<Grid>
+							<Grid.ColumnDefinitions>
+								<ColumnDefinition Width="Auto"/>
+								<ColumnDefinition Width="*"/>
+							</Grid.ColumnDefinitions>
+
+							<TextBlock Text="Surname: "
+									  FontWeight="SemiBold"
+									  Grid.Column="0"
+									  Margin="0,0,10,0"/>
+							<TextBlock Text="{Binding Surname}"
+									  Grid.Column="1"
+									  TextWrapping="Wrap"
+									   Opacity="0.5"/>
+						</Grid>
+
+						<Grid>
+							<Grid.ColumnDefinitions>
+								<ColumnDefinition Width="Auto"/>
+								<ColumnDefinition Width="*"/>
+							</Grid.ColumnDefinitions>
+
+							<TextBlock Text="Name:"
+									  FontWeight="SemiBold"
+									  Grid.Column="0"
+									  Margin="0,0,10,0"/>
+							<TextBlock Text="{Binding Name}"
+									  Grid.Column="1"
+									  TextWrapping="Wrap"
+									   Opacity="0.5"/>
+						</Grid>
+
+						<Grid>
+							<Grid.ColumnDefinitions>
+								<ColumnDefinition Width="Auto"/>
+								<ColumnDefinition Width="*"/>
+							</Grid.ColumnDefinitions>
+
+							<TextBlock Text="Patronymic:"
+									  FontWeight="SemiBold"
+									  Grid.Column="0"
+									  Margin="0,0,10,0"/>
+							<TextBlock Text="{Binding Patronymic}"
+									  Grid.Column="1"
+									  TextWrapping="Wrap"
+									   Opacity="0.5"/>
+						</Grid>
+
+						<Rectangle Height="1" Fill="#E0E0E0" Margin="0,5"/>
+
+						<Grid>
+							<Grid.ColumnDefinitions>
+								<ColumnDefinition Width="Auto"/>
+								<ColumnDefinition Width="*"/>
+							</Grid.ColumnDefinitions>
+
+							<TextBlock Text="Email:"
+									  FontWeight="SemiBold"
+									  Grid.Column="0"
+									  Margin="0,0,10,0"/>
+							<TextBlock Text="{Binding Email}"
+									  Grid.Column="1"
+									  TextWrapping="Wrap"
+									   Opacity="0.5"/>
+						</Grid>
+
+						<Grid>
+							<Grid.ColumnDefinitions>
+								<ColumnDefinition Width="Auto"/>
+								<ColumnDefinition Width="*"/>
+							</Grid.ColumnDefinitions>
+
+							<TextBlock Text="Password:"
+									  FontWeight="SemiBold"
+									  Grid.Column="0"
+									  Margin="0,0,10,0"/>
+							<TextBlock Text="{Binding Password}"
+									  Grid.Column="1"
+									  Opacity="0.5"/>
+						</Grid>
+
+						<Grid>
+							<Grid.ColumnDefinitions>
+								<ColumnDefinition Width="Auto"/>
+								<ColumnDefinition Width="*"/>
+							</Grid.ColumnDefinitions>
+
+							<TextBlock Text="Phone:"
+									  FontWeight="SemiBold"
+									  Grid.Column="0"
+									  Margin="0,0,10,0"/>
+							<TextBlock Text="{Binding Phone}"
+									  Grid.Column="1"
+									  TextWrapping="Wrap"
+									   Opacity="0.5"/>
+						</Grid>
+
+					</StackPanel>
+				</Border>
+
+				<StackPanel Orientation="Horizontal"
+							HorizontalAlignment="Center">
+					<Button Content="Редактировать профиль"
+							HorizontalAlignment="Center"
+							Width="110"
+							Height="40"
+							Classes="BTBack"
+							Click="Button_Click_1"
+							Margin="0,20,15,0">
+						<TextBlock Text="Edit"
+								   HorizontalAlignment="Center"
+								   VerticalAlignment="Center"
+								   FontSize="15"
+								   Classes="TBBack"/>
+					</Button>
+					
+					<Button Click="Button_Click"
+							HorizontalAlignment="Center"
+							Width="110"
+							Height="40"
+							Classes="BTBack"
+							Margin="0,20,0,0">
+						<TextBlock Text="Back"
+								   HorizontalAlignment="Center"
+								   VerticalAlignment="Center"
+								   FontSize="15"
+								   Classes="TBBack"/>
+					</Button>
+				</StackPanel>
+				
+				
+
+			</StackPanel>
+		</ScrollViewer>
+	</Viewbox>
+	
+
+</UserControl>

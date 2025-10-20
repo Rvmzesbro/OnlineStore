@@ -1,0 +1,111 @@
+is_global = true
+build_property.AvaloniaNameGeneratorIsEnabled = true
+build_property.AvaloniaNameGeneratorBehavior = InitializeComponent
+build_property.AvaloniaNameGeneratorDefaultFieldModifier = internal
+build_property.AvaloniaNameGeneratorFilterByPath = *
+build_property.AvaloniaNameGeneratorFilterByNamespace = *
+build_property.AvaloniaNameGeneratorViewFileNamingStrategy = NamespaceAndClassName
+build_property.AvaloniaNameGeneratorAttachDevTools = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = OnlineStore
+build_property.ProjectDir = C:\Users\мой\OneDrive\Desktop\RPM\OnlineStore\OnlineStore\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Users/мой/OneDrive/Desktop/RPM/OnlineStore/OnlineStore/App.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/мой/OneDrive/Desktop/RPM/OnlineStore/OnlineStore/MainWindow.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/мой/OneDrive/Desktop/RPM/OnlineStore/OnlineStore/Pages/Admin.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/мой/OneDrive/Desktop/RPM/OnlineStore/OnlineStore/Pages/AdminProfile.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/мой/OneDrive/Desktop/RPM/OnlineStore/OnlineStore/Pages/Client.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/мой/OneDrive/Desktop/RPM/OnlineStore/OnlineStore/Pages/ClientProfile.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/мой/OneDrive/Desktop/RPM/OnlineStore/OnlineStore/Pages/Main.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/мой/OneDrive/Desktop/RPM/OnlineStore/OnlineStore/Pages/Manager.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/мой/OneDrive/Desktop/RPM/OnlineStore/OnlineStore/Pages/ManagerProfile.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/мой/OneDrive/Desktop/RPM/OnlineStore/OnlineStore/Pages/Registration.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/мой/OneDrive/Desktop/RPM/OnlineStore/OnlineStore/Styles/AdminProfileEditStyle.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/мой/OneDrive/Desktop/RPM/OnlineStore/OnlineStore/Styles/AdminProfileStyle.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/мой/OneDrive/Desktop/RPM/OnlineStore/OnlineStore/Styles/AdminWindowStyle.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/мой/OneDrive/Desktop/RPM/OnlineStore/OnlineStore/Styles/ClientAddEditStyle.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/мой/OneDrive/Desktop/RPM/OnlineStore/OnlineStore/Styles/MainWindowStyle.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/мой/OneDrive/Desktop/RPM/OnlineStore/OnlineStore/Styles/ManagerAddEditStyle.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/мой/OneDrive/Desktop/RPM/OnlineStore/OnlineStore/Styles/ManagerWindowStyle.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/мой/OneDrive/Desktop/RPM/OnlineStore/OnlineStore/Styles/ProductAddEditStyle.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/мой/OneDrive/Desktop/RPM/OnlineStore/OnlineStore/Styles/RegistrationWindowStyle.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/мой/OneDrive/Desktop/RPM/OnlineStore/OnlineStore/Views/AddEditProductManager.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/мой/OneDrive/Desktop/RPM/OnlineStore/OnlineStore/Views/ClientAddEdit.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/мой/OneDrive/Desktop/RPM/OnlineStore/OnlineStore/Views/EditPaysClient.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/мой/OneDrive/Desktop/RPM/OnlineStore/OnlineStore/Views/EditProfile.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/мой/OneDrive/Desktop/RPM/OnlineStore/OnlineStore/Views/ManagerAddEdit.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/мой/OneDrive/Desktop/RPM/OnlineStore/OnlineStore/Views/ProductAddEdit.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/мой/OneDrive/Desktop/RPM/OnlineStore/OnlineStore/Views/ProductsClient.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/мой/OneDrive/Desktop/RPM/OnlineStore/OnlineStore/Views/ReplenishBalance.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml

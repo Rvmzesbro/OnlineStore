@@ -1,0 +1,83 @@
+    <UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="OnlineStore.Main"
+				 Background="#252746">
+
+
+		<UserControl.Styles>
+			<StyleInclude Source="/Styles/MainWindowStyle.axaml"></StyleInclude>
+		</UserControl.Styles>
+		<Grid>
+			<Grid.RowDefinitions>
+				<RowDefinition Height="Auto"/>
+				<RowDefinition Height="*"/>
+			</Grid.RowDefinitions>
+			<TextBlock x:Name="TBHeader"
+							   Classes="Mimo"
+							   Text="Store"
+							   HorizontalAlignment="Left"
+							   VerticalAlignment="Top"
+					   Margin="10"
+					   FontSize="40"/>
+			<Viewbox Grid.Row="1"
+					 VerticalAlignment="Top"> 
+				<Grid >
+					<Grid.RowDefinitions>
+						<RowDefinition/>
+						<RowDefinition/>
+						<RowDefinition/>
+						<RowDefinition/>
+						<RowDefinition/>
+						<RowDefinition/>
+					</Grid.RowDefinitions>
+
+					
+					<TextBlock x:Name="TBRegistration"
+									   Classes="Registration"
+							   HorizontalAlignment="Center"
+							   Grid.Row="1"
+						 Margin="0 20 0 0">
+
+						Authorization
+					</TextBlock>
+					
+					<TextBox x:Name="TBEmail"
+							 Grid.Row="2"
+									 Classes="Email"
+									 Text="Enter your email"
+									 GotFocus="TextBox_GotFocus"
+						
+									 LostFocus="TextBox_LostFocus"></TextBox>
+					<TextBox x:Name="TBPassword"
+							  Grid.Row="3"
+							 Text="Enter your password"
+							 GotFocus="TextBox_GotFocus_1"
+							 LostFocus="TextBox_LostFocus_1"
+							 Classes="Password"></TextBox>
+
+					<Button x:Name="BTSignUp"
+							 Grid.Row="4"
+							Click="Button_Click_2"
+							Classes="SignUp"
+							HotKey="Enter">
+						<TextBlock x:Name="ButtonSignUp"
+								   Classes="ButtonSignUp"
+								   Text="Sign in"></TextBlock>
+					</Button>
+					<Button x:Name="BTSignGoogle"
+							Margin="0 10 0 20"
+							 Grid.Row="5"
+							Click="Button_Click_3"
+							Classes="ButtonRegistration">
+						<TextBlock x:Name="TextBlockRegistration"
+								   Classes="TextBlockRegistration"
+								   Text="Sign up"></TextBlock>
+					</Button>
+				</Grid>
+			</Viewbox>
+		</Grid>
+		
+	</UserControl>

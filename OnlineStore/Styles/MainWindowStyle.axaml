@@ -1,0 +1,110 @@
+<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+	<Style Selector="TextBlock.Registration">
+		<Setter Property="FontSize" Value="30"></Setter>
+		<Setter Property="FontFamily" Value="Arial"></Setter>
+		<Setter Property="FontStretch" Value="ExtraCondensed"></Setter>
+		<Setter Property="FontWeight" Value="Bold"></Setter>
+	</Style>
+
+	<Style Selector="TextBlock.Mimo">
+		<Setter Property="FontFamily" Value="Arial"></Setter>
+		<Setter Property="FontSize" Value="15"></Setter>
+		<Setter Property="FontWeight" Value="DemiBold"></Setter>
+		
+	</Style>
+
+	<Style Selector="TextBlock.StatusBar">
+		<Setter Property="FontFamily" Value="Arial"></Setter>
+		<Setter Property="FontSize" Value="15"></Setter>
+		<Setter Property="FontWeight" Value="DemiBold"></Setter>
+		
+	</Style>
+
+	<Style Selector="Grid.MainGrid">
+		<Setter Property="Background" Value="#252746"></Setter>
+	</Style>
+
+	<Style Selector="ComboBox.CBoxic">
+		<Setter Property="Background" Value="#424C77"></Setter>
+		<Setter Property="BorderBrush" Value="#424C77"></Setter>
+		<Setter Property="Foreground" Value="#7a86a2"></Setter>
+		<Setter Property="FontFamily" Value="Arial"></Setter>
+		<Setter Property="CornerRadius" Value="10"></Setter>
+	</Style>
+
+	
+
+	<Style Selector="TextBox.Email">
+		<Setter Property="Width" Value="200"></Setter>
+		<Setter Property="Height" Value="30"></Setter>
+		<Setter Property="HorizontalAlignment" Value="Left"></Setter>
+		<Setter Property="Margin" Value="0 20 0 0"></Setter>
+		<Setter Property="Background" Value="#424C77"></Setter>
+		<Setter Property="BorderBrush" Value="#424C77"></Setter>
+		<Setter Property="Foreground" Value="#7a86a2"></Setter>
+		<Setter Property="FontFamily" Value="Arial"></Setter>
+		<Setter Property="CornerRadius" Value="10"></Setter>
+	</Style>
+
+	<Style Selector="TextBox.Password">
+		<Setter Property="Width" Value="200"></Setter>
+		<Setter Property="Height" Value="30"></Setter>
+		<Setter Property="HorizontalAlignment" Value="Left"></Setter>
+		<Setter Property="Margin" Value="0 15 0 0"></Setter>
+		<Setter Property="Background" Value="#424C77"></Setter>
+		<Setter Property="BorderBrush" Value="#424C77"></Setter>
+		<Setter Property="Foreground" Value="#7a86a2"></Setter>
+		<Setter Property="FontFamily" Value="Arial"></Setter>
+		<Setter Property="CornerRadius" Value="10"></Setter>
+	</Style>
+
+	<Style Selector="CheckBox.Agree">
+		<Setter Property="HorizontalAlignment" Value="Left"></Setter>
+		<Setter Property="Margin" Value="0 10 0 0"></Setter>
+	</Style>
+
+	<Style Selector="Button.SignUp">
+		<Setter Property="Width" Value="200"></Setter>
+		<Setter Property="Height" Value="30"></Setter>
+		<Setter Property="HorizontalAlignment" Value="Left"></Setter>
+		<Setter Property="Margin" Value="0 15 0 0"></Setter>
+		<Setter Property="Background" Value="#7e4bde"></Setter>
+		<Setter Property="CornerRadius" Value="10"></Setter>
+	</Style>
+
+	<Style Selector="Button.ButtonRegistration">
+		<Setter Property="Width" Value="200"></Setter>
+		<Setter Property="Height" Value="30"></Setter>
+		<Setter Property="HorizontalAlignment" Value="Left"></Setter>
+		<Setter Property="Margin" Value="0 10 0 0"></Setter>
+		<Setter Property="Background" Value="#7e4bde"></Setter>
+		<Setter Property="CornerRadius" Value="10"></Setter>
+	</Style>
+
+	<Style Selector="TextBlock.ButtonSignUp">
+		<Setter Property="HorizontalAlignment" Value="Center"></Setter>
+		<Setter Property="VerticalAlignment" Value="Center"></Setter>
+		<Setter Property="Foreground" Value="White"></Setter>
+		<Setter Property="FontFamily" Value="Arial"></Setter>
+		<Setter Property="FontSize" Value="12"></Setter>
+		<Setter Property="FontWeight" Value="DemiBold"></Setter>
+	</Style>
+
+
+	<Style Selector="TextBlock.TextBlockRegistration">
+		<Setter Property="HorizontalAlignment" Value="Center"></Setter>
+		<Setter Property="VerticalAlignment" Value="Center"></Setter>
+		<Setter Property="Foreground" Value="White"></Setter>
+		<Setter Property="FontFamily" Value="Arial"></Setter>
+		<Setter Property="FontSize" Value="12"></Setter>
+		<Setter Property="FontWeight" Value="DemiBold"></Setter>
+	</Style>
+
+	<Style Selector="TextBlock.AgreeCheck">
+		<Setter Property="FontFamily" Value="Arial"></Setter>
+		<Setter Property="FontSize" Value="10"></Setter>
+		<Setter Property="FontWeight" Value="DemiBold"></Setter>
+	</Style>
+</Styles>

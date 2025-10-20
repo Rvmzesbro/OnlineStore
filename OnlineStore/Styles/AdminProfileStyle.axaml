@@ -1,0 +1,23 @@
+<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+	<Style Selector="Button.BTBack">
+		<Setter Property="Background" Value="#7e4bde"></Setter>
+		<Setter Property="CornerRadius" Value="10"></Setter>
+	</Style>
+
+	<Style Selector="TextBlock.TBBack">
+		<Setter Property="Foreground" Value="White"></Setter>
+		<Setter Property="FontFamily" Value="Arial"></Setter>
+		<Setter Property="FontSize" Value="12"></Setter>
+		<Setter Property="FontWeight" Value="DemiBold"></Setter>
+	</Style>
+
+	<Style Selector="TextBox.Email">
+		<Setter Property="Background" Value="#424C77"></Setter>
+		<Setter Property="BorderBrush" Value="#424C77"></Setter>
+		<Setter Property="Foreground" Value="#7a86a2"></Setter>
+		<Setter Property="FontFamily" Value="Arial"></Setter>
+		<Setter Property="CornerRadius" Value="10"></Setter>
+	</Style>
+</Styles>

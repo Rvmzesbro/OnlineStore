@@ -1,0 +1,44 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="OnlineStore.ReplenishBalance"
+        Title="ReplenishBalance"
+		Background="#252746">
+
+	<Window.Styles>
+		<StyleInclude Source="/Styles/AdminWindowStyle.axaml"></StyleInclude>
+	</Window.Styles>
+	
+	<Viewbox>
+		<Grid Margin="50">
+			<Grid.RowDefinitions>
+				<RowDefinition/>
+				<RowDefinition/>
+			</Grid.RowDefinitions>
+			
+			<TextBlock Classes="TBBack"/>
+			<StackPanel Orientation="Horizontal"
+						Grid.Row="1">
+				<TextBox Classes="Email"
+						 x:Name="TBBalance"
+						 Watermark="Enter sum"
+						 Width="200"
+						 Margin="0 0 10 0"/>
+				<Button Click="Button_Click"
+					HorizontalAlignment="Center"
+					Width="110"
+					Height="40"
+					Classes="BTBack"
+					Margin="0,0,0,0">
+					<TextBlock Text="Save"
+							   HorizontalAlignment="Center"
+							   VerticalAlignment="Center"
+							   FontSize="15"
+							   Classes="TBBack"/>
+				</Button>
+			</StackPanel>
+		</Grid>
+	</Viewbox>
+</Window>

@@ -1,0 +1,86 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="OnlineStore.EditPaysClient"
+        Title="EditPaysClient"
+		Background="#252746">
+	
+	<Window.Styles>
+		<StyleInclude Source="/Styles/ManagerAddEditStyle.axaml"></StyleInclude>
+	</Window.Styles>
+
+	<Viewbox Margin="70">
+		<Grid>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition/>
+				<ColumnDefinition/>
+			</Grid.ColumnDefinitions>
+			<StackPanel Grid.Column="0"
+						Margin="0 0 5 0">
+				<TextBlock Text="User"
+						   Classes="TBBack"/>
+				<TextBox Classes="Email"
+						 Margin="0 0 0 10"
+						 x:Name="TBUser"
+						 IsReadOnly="True"
+						 Text="{Binding Baskets.User.FullName}"/>
+				<TextBlock Text="Product"
+						   Classes="TBBack"/>
+				<ComboBox x:Name="CBProduct"
+						  Classes="CBoxic"
+						  SelectedItem="{Binding Baskets.Product}"
+						  Width="200"
+						  Margin="0 0 0 10"/>
+				<Button x:Name="BTAdd"
+				Classes="BTBack"
+				HorizontalAlignment="Left"
+				
+				Width="70"
+				Height="30"
+				Click="Button_Click">
+					<TextBlock Classes="TBBack"
+							   Text="Click"
+							   HorizontalAlignment="Center"
+							   VerticalAlignment="Center"/>
+				</Button>
+				<Button x:Name="BTAd"
+				Classes="BTBack"
+				HorizontalAlignment="Left"
+				
+				Width="70"
+				Height="30"
+				Click="Button_Click_1">
+					<TextBlock Classes="TBBack"
+							   Text="List Products"
+							   HorizontalAlignment="Center"
+							   VerticalAlignment="Center"/>
+				</Button>
+			</StackPanel>
+			<StackPanel Grid.Column="1">
+				<TextBlock Text="CountProduct"
+						   Classes="TBBack"/>
+				<TextBox Classes="Email"
+						 Margin="0 0 0 10"
+						 x:Name="TBCountProduct"
+						 Text="{Binding CountProduct}"/>
+				<TextBlock Text="Date"
+						   Classes="TBBack"/>
+				<TextBox Classes="Email"
+						 Margin="0 0 0 10"
+						 IsReadOnly="True"
+						 x:Name="TBDate"
+						 Text="{Binding Order.Date}"/>
+				<TextBlock Text="Status"
+						   Classes="TBBack"/>
+				<ComboBox x:Name="CBStatus"
+						  Classes="CBoxic"
+						  SelectedItem="{Binding Order.Status}"
+						  Width="200"/>
+				<ListBox x:Name="DGProducts">
+				</ListBox>
+			</StackPanel>
+		</Grid>
+	</Viewbox>
+</Window>
